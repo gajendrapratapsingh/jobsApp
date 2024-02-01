@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/intro_bg">
+
+    <include layout="@layout/layout_top_pattern" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpIntro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
+
+</RelativeLayout>

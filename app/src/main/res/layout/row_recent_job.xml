@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp">
+
+        <LinearLayout
+            android:id="@+id/llIvJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/job_icon_bg"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivJob"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:contentDescription="@string/app_name"
+                android:padding="3dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_sample_job"
+                app:shapeAppearanceOverlay="@style/CircleImageView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/ivSaveJob"
+            android:layout_toEndOf="@+id/llIvJob"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvJobTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/sora"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/sample_job_title"
+                android:textColor="@color/title"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvJobLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/sora"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/sample_job_location"
+                android:textColor="@color/subTitle_75"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ivSaveJob"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/about_icon_bg"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_bookmark" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

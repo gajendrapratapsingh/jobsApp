@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--if you want to display introduction screen first to user then set true otherwise false -->
+    <string name="is_introduction_see">true</string>
+
+    <string-array name="intro_title">
+        <item>100+ Jobs Listed Daily</item>
+        <item>Jobs Resume Upload</item>
+        <item>Online Interview</item>
+    </string-array>
+
+    <string-array name="intro_desc">
+        <item>Jobs listed a lot of job vacancies daily, find your dream job with many choices now.</item>
+        <item>You can easily upload your updated CV or Resume directly in Jobs app.</item>
+        <item>Online interview with HR using only mobile phone? yeah, we got it cover.</item>
+    </string-array>
+
+    <integer-array name="intro_image">
+        <item>@drawable/intro_1</item>
+        <item>@drawable/intro_2</item>
+        <item>@drawable/intro_3</item>
+    </integer-array>
+
+    <!--if you want to add/remove item in introduction screen then add or remove all above three array otherwise not working-->
+
+</resources>

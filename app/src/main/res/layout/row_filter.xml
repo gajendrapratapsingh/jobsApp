@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cbFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sora"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="@string/app_name"
+        android:textColor="@color/login_edt_text"
+        android:theme="@style/checkBoxStyle" />
+
+</LinearLayout>

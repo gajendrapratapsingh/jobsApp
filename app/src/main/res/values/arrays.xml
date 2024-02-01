@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="category_colors">
+        <item>@color/category_1</item>
+        <item>@color/category_2</item>
+        <item>@color/category_3</item>
+        <item>@color/category_4</item>
+        <item>@color/category_5</item>
+    </integer-array>
+    <integer-array name="company_colors">
+        <item>@color/company_1</item>
+        <item>@color/company_2</item>
+        <item>@color/company_3</item>
+        <item>@color/company_4</item>
+        <item>@color/company_5</item>
+    </integer-array>
+</resources>

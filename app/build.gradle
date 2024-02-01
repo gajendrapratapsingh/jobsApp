@@ -1,0 +1,82 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    //   id 'kotlin-android'
+}
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.jobs"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes.each {
+        it.buildConfigField 'String', 'SERVER_URL', serverUrl
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
+    implementation 'org.greenrobot:eventbus:3.3.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+    implementation 'com.google.code.gson:gson:2.9.0'
+    implementation 'com.tuyenmonkey:text-decorator:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.13.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
+    implementation 'com.github.huangxiaolianghh:XRecyclerViewDivider:1.0.2'
+    implementation 'com.mobsandgeeks:android-saripaar:2.0.3'
+    implementation 'com.github.MrNtlu:Toastie:1.1.0'
+    implementation 'com.facebook.android:facebook-login:15.2.0'
+    implementation 'com.google.android.gms:play-services-auth:20.6.0'
+    implementation 'com.github.BlackBoxVision:datetimepicker-edittext:v0.4.0'
+    implementation 'com.braintreepayments.api:drop-in:4.6.0'
+    implementation 'com.stripe:stripe-android:18.2.0'
+    implementation 'com.razorpay:checkout:1.6.20'
+    implementation 'com.github.10bis:compactCreditInput:2.0.2'
+    implementation 'co.paystack.android:paystack:3.3.2'
+    implementation 'in.payu:payu-checkout-pro:1.8.2'
+    implementation 'com.github.flutterwave.rave-android:rave_android:2.1.39'
+    implementation 'dev.chrisbanes.insetter:insetter:0.6.1'
+    implementation 'com.google.android.gms:play-services-ads:22.3.0'
+    implementation 'com.github.ixiDev:GDPRChecker:v0.2'
+    implementation 'com.google.android.ads.consent:consent-library:1.0.8'
+    implementation 'com.facebook.android:audience-network-sdk:6.15.0'
+    implementation 'com.google.ads.mediation:facebook:6.15.0.0'
+    implementation 'com.startapp:inapp-sdk:4.10.11'
+    implementation 'com.applovin:applovin-sdk:11.10.1'
+    implementation 'com.wortise:android-sdk:1.4.1'
+    implementation 'com.onesignal:OneSignal:4.8.5'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'com.google.firebase:firebase-messaging:23.2.1'
+    implementation 'com.google.firebase:firebase-analytics:21.3.0'
+    implementation 'org.jsoup:jsoup:1.13.1'
+    implementation 'com.karumi:dexter:6.2.3'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/payment_successful"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/sorabold"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/payment_success"
+        android:textColor="@color/title"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/sora"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/payment_success_msg"
+        android:textColor="@color/subTitle_80"
+        android:textSize="16sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/sora"
+        android:includeFontPadding="false"
+        android:paddingStart="60dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="60dp"
+        android:paddingBottom="16dp"
+        android:text="@string/back_to_home"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/job_apply"
+        app:cornerRadius="50dp" />
+
+</LinearLayout>
+

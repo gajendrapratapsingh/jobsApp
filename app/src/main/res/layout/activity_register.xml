@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/layout_top_pattern" />
+
+
+        <LinearLayout
+            android:id="@+id/llWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="54dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/soraextrabold"
+                android:text="@string/lbl_sign_up"
+                android:textColor="@color/title"
+                android:textSize="28sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sora"
+                android:text="@string/msg_let_s_sign_up"
+                android:textColor="@color/subTitle_80"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:id="@+id/rgUserType"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_below="@+id/llWelcome"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/login_edt_bg"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbJobSeeker"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/user_type_bg_seeker"
+                android:button="@null"
+                android:checked="true"
+                android:fontFamily="@font/sora"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/job_seeker"
+                android:textColor="@color/state_list_type"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbJobProvider"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/user_type_bg_provider"
+                android:button="@null"
+                android:fontFamily="@font/sora"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/job_provider"
+                android:textColor="@color/state_list_type"
+                android:textSize="16sp" />
+
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rgUserType"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_edt_bg"
+                android:fontFamily="@font/sora"
+                android:hint="@string/lbl_name"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:padding="18dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/login_edt_text"
+                android:textSize="16sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_edt_bg"
+                android:fontFamily="@font/sora"
+                android:hint="@string/lbl_email"
+                android:includeFontPadding="false"
+                android:inputType="textEmailAddress"
+                android:padding="18dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/login_edt_text"
+                android:textSize="16sp"
+                tools:ignore="Autofill" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/login_edt_text">
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_edt_bg"
+                    android:fontFamily="@font/sora"
+                    android:hint="@string/lbl_password"
+                    android:includeFontPadding="false"
+                    android:inputType="textPassword"
+                    android:padding="18dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/login_edt_text"
+                    android:textSize="16sp"
+                    tools:ignore="Autofill" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_edt_bg"
+                android:fontFamily="@font/sora"
+                android:hint="@string/lbl_phone"
+                android:includeFontPadding="false"
+                android:inputType="phone"
+                android:padding="18dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/login_edt_text"
+                android:textSize="16sp"
+                tools:ignore="Autofill" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sorabold"
+                android:includeFontPadding="false"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="@string/lbl_register"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:backgroundTint="@color/colorPrimary"
+                app:cornerRadius="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <com.example.util.SmoothCheckBox
+                    android:id="@+id/cbPrivacy"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    app:color_checked="@color/colorPrimary"
+                    app:color_unchecked="@color/white"
+                    app:color_unchecked_stroke="@color/login_edt_text_bg_border" />
+
+                <TextView
+                    android:id="@+id/tvPrivacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/sorabold"
+                    android:includeFontPadding="false"
+                    android:text="@string/msg_by_signing_up"
+                    android:textColor="@color/login_other_text"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/sorabold"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/msg_already_have_an_account"
+                android:textColor="@color/login_other_text"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

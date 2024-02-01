@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#1877F2</color>
+    <color name="colorPrimaryDark">#124E9E</color>
+    <color name="colorAccent">@color/colorPrimary</color>
+    <!--color used for active switch and fab use day colorPrimary always-->
+    <color name="colorActive">@color/colorPrimary</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_90">#E6FFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
+
+    <color name="bg">#E5FAFB</color>
+    <color name="title">#3F3D56</color>
+    <color name="subTitle_75">#BF3F3D56</color>
+    <color name="subTitle_80">#cc3f3d56</color>
+
+    <!---Login -->
+    <color name="login_edt_text">#b24e4b66</color>
+    <color name="login_edt_text_bg">#FEFEFE</color>
+    <color name="login_edt_text_bg_border">#e4e7e6</color>
+    <color name="login_other_text">#cc4e4b66</color>
+
+    <!---Intro -->
+    <color name="intro_bg">#FDFDFD</color>
+    <color name="intro_title">#504F6D</color>
+    <color name="intro_sub_title">#CC686689</color>
+    <color name="intro_view_line">#4D504F6D</color>
+    <color name="intro_dot_un_select">#66504F6D</color>
+
+    <!---About -->
+    <color name="about_sub_title_bg">#263F3D56</color><!---used also applied date -->
+    <color name="about_icon_bg">#261877F2</color>
+    <color name="about_sec_bg">#CCFFFFFF</color><!---used also plan time // cardview jobspplied date-->
+
+    <!--- Setting -->
+    <color name="setting_title">@color/login_other_text</color>
+    <color name="setting_line">#D1DDEC</color>
+
+    <!---Bottom Sheet All -->
+    <color name="bottom_sheet_line">#D9D9D9</color>
+    <color name="bottom_sheet_view">#B3D9D9D9</color>
+    <color name="bottom_sheet_title">#4E4B66</color><!---used also job details skill and date time -->
+    <color name="bottom_sheet_filter_item_bg">#FAFAFA</color>
+
+    <!---All Row Layout -->
+    <color name="job_icon_bg_border">#1A4E4B66</color>
+    <color name="job_rec_salary_bg">@color/about_icon_bg</color>
+    <color name="company_location_bg">#26FFFFFF</color>
+    <color name="job_skill_bg">#1F1877F2</color> <!---used as also plan, job seen -->
+    <color name="job_apply">#0E9D58</color>
+    <color name="job_applied_bg">#1F0E9D58</color><!---used as also detail salary -->
+    <color name="plan_circle_unselect">#DBDBDB</color>
+    <color name="plan_select_apply_bg">#33FFFFFF</color>
+    <color name="plan_gateway_bg">#401877F2</color>
+
+
+    <!---Job Details -->
+    <color name="job_detail_info_bg">#F6F6F6</color><!---job details table -->
+    <color name="job_work_day_bg">#1F4E4B66</color>
+
+    <!---Edit Profile -->
+    <color name="upload_resume_sub_title">#994E4B66</color>
+    <color name="profile_gender_border">#E0E0E0</color>
+    <color name="profile_gender_selected_bg">#F6F6F6</color>
+    <color name="profile_save_apply_bg">#1467D1</color>
+
+    <!--Top bar -->
+    <color name="online">#4CD964</color>
+    <color name="offline">#3F3D56</color>
+    <color name="search_bg">#2168C3</color>
+    <color name="search_title">#B2CDEE</color>
+
+    <!--Bottom bar -->
+    <color name="bottom_bar_select_bg">#261877F2</color>
+    <color name="bottom_bar_normal_bg">#1A6D6C7E</color>
+    <color name="bottom_bar_normal_title">#6D6C7E</color>
+
+    <!--Splash -->
+    <color name="splash_state">#ffffff</color>
+
+    <!---Dashboard-->
+    <color name="dashboard_line">#E8E8E8</color>
+    <color name="dashboard_highlight">#1A3F3D56</color>
+
+    <!--Report -->
+    <color name="report">#E49215</color>
+
+    <!---Color for Category & Company-->
+    <color name="category_1">#1A4CD964</color>
+    <color name="category_2">#1A1D6FB8</color>
+    <color name="category_3">#1AFF9E01</color>
+    <color name="category_4">#1AAE3CC0</color>
+    <color name="category_5">#1A08A9ED</color>
+    <color name="company_1">#0E9D58</color>
+    <color name="company_2">#E97A2A</color>
+    <color name="company_3">#4E98F9</color>
+    <color name="company_4">#0FB478</color>
+    <color name="company_5">#5D28F2</color>
+
+</resources>

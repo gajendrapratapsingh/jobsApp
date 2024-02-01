@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="TouchTargetSizeCheck">
+
+    <include layout="@layout/layout_top_pattern" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:layout_toStartOf="@+id/includeImage"
+        android:layout_toEndOf="@+id/fabBack"
+        android:fontFamily="@font/sorabold"
+        android:includeFontPadding="false"
+        android:text="@string/setting"
+        android:textColor="@color/title"
+        android:textSize="20sp" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/ivDm"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/about_icon_bg"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_setting_notification" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_toStartOf="@+id/swNotification"
+                    android:layout_toEndOf="@+id/ivDm"
+                    android:fontFamily="@font/sora"
+                    android:includeFontPadding="false"
+                    android:text="@string/push_notification"
+                    android:textColor="@color/setting_title"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/swNotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/setting_line" />
+
+            <RelativeLayout
+                android:id="@+id/rlDashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:visibility="gone">
+
+                <ImageButton
+                    android:id="@+id/ivDb"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/about_icon_bg"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/img_demo_about" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_toStartOf="@+id/ivDbArw"
+                    android:layout_toEndOf="@+id/ivDb"
+                    android:fontFamily="@font/sora"
+                    android:includeFontPadding="false"
+                    android:text="@string/dashboard"
+                    android:textColor="@color/setting_title"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/ivDbArw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_setting_arrow" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:background="@color/setting_line" />
+
+            <RelativeLayout
+                android:id="@+id/rlEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <ImageButton
+                    android:id="@+id/ivEd"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/about_icon_bg"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/img_demo_about" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_toStartOf="@+id/ivEdArw"
+                    android:layout_toEndOf="@+id/ivEd"
+                    android:fontFamily="@font/sora"
+                    android:includeFontPadding="false"
+                    android:text="@string/edit_profile"
+                    android:textColor="@color/setting_title"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/ivEdArw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_setting_arrow" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/setting_line" />
+
+            <RelativeLayout
+                android:id="@+id/rlChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:visibility="gone">
+
+                <ImageButton
+                    android:id="@+id/ivCp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/about_icon_bg"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/img_demo_about" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_toStartOf="@+id/ivCpArw"
+                    android:layout_toEndOf="@+id/ivCp"
+                    android:fontFamily="@font/sora"
+                    android:includeFontPadding="false"
+                    android:text="@string/change_password"
+                    android:textColor="@color/setting_title"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/ivCpArw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_setting_arrow" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:visibility="gone"
+                android:background="@color/setting_line" />
+
+            <RelativeLayout
+                android:id="@+id/rlSavedJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <ImageButton
+                    android:id="@+id/ivSj"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/about_icon_bg"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_setting_save_job" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_toStartOf="@+id/ivSjArw"
+                    android:layout_toEndOf="@+id/ivSj"
+                    android:fontFamily="@font/sora"
+                    android:includeFontPadding="false"
+                    android:text="@string/saved_job"
+                    android:textColor="@color/setting_title"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/ivSjArw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_setting_arrow" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/setting_line" />
+
+            <RelativeLayout
+                android:id="@+id/rlAppliedJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <ImageButton
+                    android:id="@+id/ivAj"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/about_icon_bg"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_setting_apply_job" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_toStartOf="@+id/ivAjArw"
+                    android:layout_toEndOf="@+id/ivAj"
+                    android:fontFamily="@font/sora"
+                    android:includeFontPadding="false"
+                    android:text="@string/applied_job"
+                    android:textColor="@color/setting_title"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/ivAjArw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_setting_arrow" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/setting_line" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="3"
+                tools:listitem="@layout/row_page" />
+
+            <RelativeLayout
+                android:id="@+id/rlMoreApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <ImageButton
+                    android:id="@+id/ivMa"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/about_icon_bg"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_setting_more_app" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_toStartOf="@+id/ivMaArw"
+                    android:layout_toEndOf="@+id/ivMa"
+                    android:fontFamily="@font/sora"
+                    android:includeFontPadding="false"
+                    android:text="@string/more_app"
+                    android:textColor="@color/setting_title"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/ivMaArw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_setting_arrow" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/setting_line" />
+
+            <RelativeLayout
+                android:id="@+id/rlRateApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <ImageButton
+                    android:id="@+id/ivRa"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/about_icon_bg"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_setting_rate_app" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_toStartOf="@+id/ivRaArw"
+                    android:layout_toEndOf="@+id/ivRa"
+                    android:fontFamily="@font/sora"
+                    android:includeFontPadding="false"
+                    android:text="@string/rate_app"
+                    android:textColor="@color/setting_title"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/ivRaArw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_setting_arrow" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/setting_line" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <ImageButton
+                    android:id="@+id/ivLt"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/about_icon_bg"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_setting_logout" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_toStartOf="@+id/ivLtArw"
+                    android:layout_toEndOf="@+id/ivLt"
+                    android:fontFamily="@font/sora"
+                    android:includeFontPadding="false"
+                    android:text="@string/logout"
+                    android:textColor="@color/setting_title"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/ivLtArw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_setting_arrow" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/lineLogout"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/setting_line" />
+
+            <include
+                android:id="@+id/bottomBar"
+                layout="@layout/layout_bottom_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

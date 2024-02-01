@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <include layout="@layout/layout_top_pattern" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_two" />
+
+    <com.tenbis.library.views.CompactCreditCardInput
+        android:id="@+id/ccInout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        app:label_text_color="@color/black"
+        app:text_color="@color/black" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ccInout"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:fontFamily="@font/sorabold"
+        android:includeFontPadding="false"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="@string/pay_via"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="10dp" />
+
+
+</RelativeLayout>

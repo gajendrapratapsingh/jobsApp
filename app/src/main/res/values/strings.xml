@@ -1,0 +1,265 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">JobsApp</string>
+
+    <!---Login-->
+    <string name="lbl_welcome_back">Welcome Back!</string>
+    <string name="lbl_skip">Skip</string>
+    <string name="msg_let_s_log_in_a">Let\'s Log in. Apply to Jobs!</string>
+    <string name="lbl_email">Email<font color='#FF716A'>*</font></string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_forgot_password">Forgot Password?</string>
+    <string name="lbl_remember_me">Remember me</string>
+    <string name="lbl_log_in">Log In</string>
+    <string name="msg_or_continue_with">or continue with</string>
+    <string name="lbl_facebook">Facebook</string>
+    <string name="lbl_google">Google</string>
+    <string name="msg_by_signing_in">By Signing in you accept %s</string>
+    <string name="msg_by_signing_up">By Signing up you accept %s</string>
+    <string name="lbl_privacy_policy">Privacy Policy</string>
+    <string name="msg_don_t_have_an_account">Don\'t have an account? %s</string>
+    <string name="default_user_name">ViaviWebtech</string>
+
+    <!---Register-->
+    <string name="lbl_sign_up">Sign Up</string>
+    <string name="msg_let_s_sign_up">Let\'s Sign Up. Apply to Jobs!</string>
+    <string name="lbl_name">Name<font color='#FF716A'>*</font></string>
+    <string name="lbl_phone">Phone</string>
+    <string name="lbl_register">Register</string>
+    <string name="msg_already_have_an_account">Already have an account? %s</string>
+    <string name="lbl_already_login">Login</string>
+    <string name="please_accept">Please select accept checkbox </string>
+    <string name="job_seeker">Job Seeker</string>
+    <string name="job_provider">Job Provider</string>
+
+    <!---Forgot Password -->
+    <string name="msg_forgot_pass">Enter your valid email address below and we will send you email with instructions on how to change your password</string>
+    <string name="msg_enter_your_email">Enter your email</string>
+    <string name="lbl_send_email">Send Email</string>
+
+    <!---Introduction -->
+    <string name="intro_1_title">100+ Jobs Listed Daily</string>
+    <string name="intro_1_msg">Jobs listed a lot of job vacancies daily, find your dream job with many choices now.</string>
+    <string name="lbl_next">Next</string>
+    <string name="lbl_get_started">Get Started</string>
+
+    <!---About Us -->
+    <string name="lbl_company">Company</string>
+    <string name="lbl_app_version">App Version</string>
+    <string name="lbl_email_address">Email</string>
+    <string name="lbl_website">Website</string>
+    <string name="lbl_contact">Contact Us</string>
+    <string name="lbl_about_us">About Us</string>
+    <string name="lbl_social">Social</string>
+
+
+    <!---Setting -->
+    <string name="push_notification">Enable Push Notification</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_co">Terms of Conditions</string>
+    <string name="more_app">More App</string>
+    <string name="rate_app">Rate App</string>
+    <string name="logout">Logout</string>
+    <string name="logout_msg">Are you sure you want to logout?</string>
+    <string name="logout_yes">Yes, Logout</string>
+    <string name="logout_cancel">Cancel</string>
+
+
+    <!---Ad Skill Sheet -->
+    <string name="add_skills">Add Skills</string>
+    <string name="enter_skill">Enter Skills with comma</string>
+    <string name="submit">Submit</string>
+
+    <!--Report Sheet -->
+    <string name="report">Report</string>
+    <string name="write_report">Write your report</string>
+    <string name="write_reason">Write your reason…</string>
+    <string name="may_be_later">Maybe Later</string>
+
+    <!--all row layout-->
+    <string name="job_applied">Applied</string>
+    <string name="job_seen">Seen</string>
+    <string name="apply_now">Apply Now</string>
+    <string name="num_plus_job">%s+ Jobs</string>
+    <string name="applied_on">Applied on %s</string>
+    <string name="plan_num_job">%s Job(s) Apply</string>
+    <string name="plan_num_job_add">%s Job(s) Add</string>
+    <string name="plan_price">%s/</string>
+    <string name="plan_duration">For %s</string>
+    <string name="salary_currency">%s%s</string>
+
+
+    <!---Plan -->
+    <string name="plan">Subscription Plan</string>
+    <string name="plan_desc">Users can apply or add jobs based on plans. choose a plan based on your usage. Below there are plan names,price,limit and validity days.</string>
+    <string name="select_plan">Select Plan</string>
+    <string name="proceed_to_pay">Proceed to Pay</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="payment_success">Payment Successful</string>
+    <string name="payment_success_msg">We have received your payment and your plan is activated</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="select_gateway">Please select any one of them payment gateway</string>
+    <string name="no_gateway">There is currently not any payment gateway is available</string>
+    <string name="gateway_id_null">There are some issue regrading configuration of payment gateway</string>
+    <string name="attention">Attention</string>
+    <string name="subscribe">Subscribe</string>
+
+    <!--- Payment Gateway -->
+    <string name="payment">Payment</string>
+    <string name="pay_via">Pay : %s %s via %s</string>
+    <string name="payment_token_error">Some error occurred when generating payment token</string>
+    <string name="payment_cancel">Payment Cancelled</string>
+    <string name="payment_failed">an extremely unlikely failure occurred</string>
+    <string name="proceed_with_payment">Now Proceed with Payment</string>
+    <string name="payment_company_name">ViaviWebtech</string>
+    <string name="payment_need_phone">Seems you does not have added phone number please enter it in profile because payment need it.</string>
+    <string name="payment_add_proceed">Please wait. your payment is currently being processed. Do not refresh or back</string>
+    <!--- Job Detail -->
+    <string name="job_posted_date">Posted Date</string>
+    <string name="job_designation">Designation</string>
+    <string name="job_phone">Phone Number</string>
+    <string name="job_email">Email Address</string>
+    <string name="job_website">Website</string>
+    <string name="job_address">Address</string>
+    <string name="job_description">Job Description</string>
+    <string name="job_skill">Job Skills</string>
+    <string name="job_salary">Salary</string>
+    <string name="job_qualification">Job Qualification</string>
+    <string name="job_work_day">Job Work Day</string>
+    <string name="job_work_time">Job Work Time</string>
+    <string name="job_similar">Similar Jobs</string>
+
+    <!--Company Details -->
+    <string name="job_requirement">Job Requirements</string>
+
+    <!---Edit Profile -->
+    <string name="full_name">Full name</string>
+    <string name="email_address">Email address</string>
+    <string name="phone_number">Phone number</string>
+    <string name="city">City</string>
+    <string name="address">Address</string>
+    <string name="current_company">Current company</string>
+    <string name="experience">Experience</string>
+    <string name="dob">Date of Birth</string>
+    <string name="save">Save</string>
+    <string name="upload_resume">Upload Resume</string>
+    <string name="upload_resume_lbl_one">Attach file from your phone</string>
+    <string name="upload_resume_lbl_two">.(pdf, docx, doc) Accepted</string>
+    <string name="gender">Gender</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="key_skill">Key Skills</string>
+    <string name="your_skill">Your Current Skills</string>
+    <string name="add_skill">Add Skills</string>
+    <string name="current_company_name">Your Current Company Name</string>
+    <string name="current_exp">Current Experience : %s</string>
+    <string name="saved_job">Saved Job</string>
+    <string name="applied_job">Applied Jobs</string>
+    <string name="job_type_full">Full Time</string>
+    <string name="job_vacancy">Vacancy - %s</string>
+    <string name="n_a">N/A</string>
+
+    <!---change password -->
+    <string name="change_password">Change Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="update">Update</string>
+
+    <!---Filter -->
+    <string name="filter">Select Filters</string>
+    <string name="filter_apply">Apply Filters</string>
+    <string name="filter_clear">Clear Filters</string>
+    <string name="filter_category">Category</string>
+    <string name="filter_company">Company</string>
+    <string name="filter_city">City</string>
+    <string name="filter_salary">Salary</string>
+    <string name="filter_job_type">Job Type</string>
+    <string name="filter_job_qualification">Qualification</string>
+    <string name="filter_salary_sel">Salary %s%s-%s</string>
+
+    <!--App Update & InValid License-->
+    <string name="update_available">Update available</string>
+    <string name="update_ok">Update</string>
+    <string name="update_cancel">Cancel</string>
+    <string name="invalid_license">Invalid License</string>
+    <string name="license_msg">You are using invalid License or Package name is already in use, for more information contact us: info@viaviweb.com or viaviwebtech@gmail.com</string>
+    <string name="okay">OK</string>
+
+    <!---Home -->
+    <string name="find_your_1000">Find your 1000+ Jobs</string>
+    <string name="search_job" tools:ignore="TypographyEllipsis">Search a job or position...</string>
+    <string name="see_all">See all</string>
+    <string name="home">Home</string>
+    <string name="latest_job">Latest Jobs</string>
+    <string name="category">Category</string>
+    <string name="setting">Setting</string>
+    <string name="recent_job">Recent Jobs</string>
+    <string name="company">Company</string>
+    <string name="search">Search</string>
+    <string name="recommended_job">Recommended Jobs</string>
+    <string name="back_key">Please click BACK again to exit</string>
+
+    <!---Dashboard -->
+    <string name="dashboard">Dashboard</string>
+    <string name="user_profile">User Profile</string>
+    <string name="my_subscription">My Subscription</string>
+    <string name="current_plan">Current Plan :</string>
+    <string name="expire_on">Subscription expires on  %s</string>
+    <string name="upgrade_plan">Upgrade Plan</string>
+    <string name="last_invoice">Last Invoice</string>
+    <string name="last_invoice_date">Date :</string>
+    <string name="last_invoice_plan">Plan :</string>
+    <string name="last_invoice_amount">Amount :</string>
+    <string name="edit">Edit</string>
+
+    <!--share -->
+    <string name="share_location">Location :- %s</string>
+    <string name="share_designation">Designation :- %s</string>
+    <string name="share_phone">Phone :- %s</string>
+    <string name="share_email">Email :- %s</string>
+    <string name="share_website">Website :- %s</string>
+    <string name="share_address">Address :- %s</string>
+    <string name="share_salary">Salary :- %s%s</string>
+    <string name="share_app_link">Download Application here https://play.google.com/store/apps/details?id=</string>
+
+    <!--Job Provider-->
+    <string name="information">Information</string>
+    <string name="job_provider_message">&#9679; There is a separate web portal for job providers to Add, Edit and manage users of applied jobs.
+        \n&#9679; For job upload active subscription plan needed so purchase it first.
+        \n&#9679; The web portal login is the same as the app.
+        \n&#9679; Link of web portal %s</string>
+
+
+    <string name="sample_job_title">Software Engineer</string>
+    <string name="sample_job_location">California, USA</string>
+    <string name="sample_job_desc">Lorem Ipsum is simply dummy text of the and type setting industry. Lorem Ipsum has been the industry\'s standard dummy text.</string>
+    <string name="sample_job_salary">$80K</string>
+    <string name="sample_job_salary_month">/Month</string>
+
+
+    <!--State -->
+    <string name="loading">Loading</string>
+    <string name="no_internet">No Internet Connection!</string>
+    <string name="no_internet_msg">There is no internet connection</string>
+    <string name="no_data">No Results Found</string>
+    <string name="no_data_msg">We can\'t find any item in this section..</string>
+    <string name="no_error">Error!</string>
+    <string name="something_wrong">Something wrong happen please try after some time</string>
+    <string name="try_again">Try Again</string>
+    <string name="retry_splash">Retry</string>
+
+    <string name="need_login">You have to Login first</string>
+    <string name="user_disable">Admin was disable or deleted you as user</string>
+
+    <!-- if you want to RTL then put it true other wise it false-->
+    <string name="isRTL">false</string>
+    <string name="facebook_app_id">185517499964232</string>
+    <string name="fb_login_protocol_scheme">fb185517499964232</string>
+    <string name="facebook_client_token">95a6fb1a28326818a6f2d1cb31929021</string>
+
+    <string name="play_more_apps">https://play.google.com/store/apps/developer?id=Viaan+Parmar</string>
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="applovin_sdk_key" tools:ignore="Typos">FBZJ_9VAbH95a0MVJsIldv-Twlc8JBmTNKtNTMX3eh9DhVk_M0k-viWpS7ymJiJg1A2VXaZAGiOyC6yT6gX0N2</string>
+    <string name="onesignal_app_id" tools:ignore="TypographyDashes">1a5c4fd0-2d25-4c23-a794-2dd117d3dc87</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="item_space" format="float" type="dimen">16</item>
+    <item name="item_space_filter" format="float" type="dimen">8</item>
+    <dimen name="status_bar">24dp</dimen>
+    <dimen name="applovin_banner_height">50dp</dimen>
+</resources>
